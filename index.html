@@ -15,6 +15,11 @@
      <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!--  -->
+   
+
+
+    
     <!---------------------- 
         header part start 
     ------------------- -->
@@ -250,9 +255,37 @@
             <h1>Ready to join ? </h1>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
           </div>
-          <div class="col-lg-6 text-end">
-            <button class="btn bg-white fw-bold text-sky py-2 px-4">Register Now</button>
+          <div class="col-lg-6 text-md-end">
+            <button type="button" class="btn bg-white fw-bold text-sky py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register Now</button>
           </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Join Now</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                  <form>
+                    <div class="mb-3">
+                      <label for="email" class="col-form-label text-left">Email:</label>
+                      <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Your Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
         </div>
       </section>
       <!-- ready toh join section end -->
